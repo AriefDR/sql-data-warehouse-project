@@ -1,47 +1,201 @@
-# 🚀 Data Warehouse and Analytics Project
+# Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository!  
-This project demonstrates an end-to-end data warehousing and analytics solution — from ingesting raw data to delivering actionable business insights. Built as a portfolio project, it highlights **industry best practices in Data Engineering and Analytics**, including data modeling, cleansing, integration, and SQL-driven reporting.
+Welcome to the **Data Warehouse and Analytics Project** repository 🚀  
 
----
-## 🏗️ Project Requirement
+This project demonstrates a complete end-to-end **Modern Data Warehouse implementation**, from raw data ingestion to analytical reporting. It is designed as a portfolio-grade project showcasing industry best practices in:
 
-### 🏭 Building the Data Warehousing (Data Engineering)
-
-#### 🎯 Objective
-- **Data Sources**  
-  Import data from two source systems (**ERP** and **CRM**) provided as CSV files.
-- **Data Quality**  
-  Cleanse, validate, and resolve data quality issues prior to analysis.
-- **Integration**  
-  Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**  
-  Focus on the latest datasets only. Data historization is not required.
-- **Documentation**  
-  Provide clear documentation of the data model to support both business stakeholders and analytical teams.
+- Data Engineering  
+- Data Modeling  
+- ETL Development  
+- Data Quality Validation  
+- SQL-based Analytics  
 
 ---
 
-### 📊 BI: Analytics & Reporting (Data Analytics)
+# 🏗️ Data Architecture
 
-#### 🎯 Objective
-Develop SQL-based analytics to deliver detailed insighed into:
-- 📌 **Customer Behavior**
-- 📦 **Product Performance**
-- 📈 **Sales Trends**
+This project follows the **Medallion Architecture** pattern consisting of:
 
-These insights empower stakeholders with key business metrics, enabling data-driven strategic decision-making.
+- **Bronze Layer** – Raw data ingestion  
+- **Silver Layer** – Data cleansing and transformation  
+- **Gold Layer** – Business-ready dimensional modeling  
+
+![Data Architecture](docs/data_architecture.png)
+
+## 🔹 Bronze Layer
+- Stores raw data exactly as received from source systems.
+- Data is ingested from **CSV files (ERP & CRM)** into **PostgreSQL**.
+- No transformation is applied at this stage.
+- Acts as a single source of truth for raw data.
+
+## 🔹 Silver Layer
+- Performs data cleansing, validation, and standardization.
+- Handles null checks, duplicates, invalid formats, and data consistency.
+- Prepares structured datasets for analytical modeling.
+
+## 🔹 Gold Layer
+- Implements a **Star Schema** (Fact & Dimension tables).
+- Optimized for reporting and analytical workloads.
+- Enforces surrogate key uniqueness and referential integrity.
 
 ---
 
-## 🛡️ Licence
+# 📖 Project Overview
 
-This project is licensed under [MIT License][LICENSE]. 
+This project includes:
+
+## 1️⃣ Data Architecture
+Designing a scalable and modular warehouse using Medallion Architecture.
+
+## 2️⃣ ETL Pipelines
+Building SQL-based pipelines to:
+- Extract data from ERP & CRM systems  
+- Clean and standardize records  
+- Load curated datasets into structured models  
+
+## 3️⃣ Data Modeling
+Developing:
+- Fact tables (sales transactions)
+- Dimension tables (customers, products)
+- Surrogate keys
+- Referential integrity validation
+
+## 4️⃣ Analytics & Reporting
+Creating SQL-based analytical queries for:
+- Customer behavior analysis  
+- Product performance insights  
+- Sales trend monitoring  
+
+---
+
+# 🎯 Who Is This Project For?
+
+This repository is ideal for:
+
+- Data Engineers  
+- Data Analysts  
+- SQL Developers  
+- Data Architects  
+- ETL Pipeline Developer
+- Data Modeling
+---
+
+# 🛠️ Tools & Technologies
+
+All tools used in this project are free and open-source.
+
+- **PostgreSQL** – Relational database system  
+  🔗 Download: https://www.postgresql.org/download/
+
+- **pgAdmin 4** – Database GUI for managing PostgreSQL  
+  🔗 Download: https://www.pgadmin.org/download/
+
+- **Draw.io (Diagrams.net)** – Data modeling & architecture diagrams  
+  🔗 Website: https://www.diagrams.net/
+
+- **GitHub** – Version control and collaboration  
+  🔗 Website: https://github.com/
+
+- **CSV Datasets** – ERP & CRM data sources  
+  📂 Located in the '[Datasets](datasets/)' folder of this repository
+
+---
+
+# 🚀 Project Requirements
+
+## 🏗️ Building the Data Warehouse (Data Engineering)
+
+### Objective
+Develop a modern PostgreSQL-based data warehouse to consolidate sales data and enable analytical reporting.
+
+### Specifications
+- Import ERP and CRM datasets from CSV files  
+- Perform data cleansing and quality validation  
+- Integrate datasets into a unified analytical model  
+- Focus on the latest dataset (no historization required)  
+- Provide complete documentation of the data model  
+
+---
+
+## 📊 BI: Analytics & Reporting
+
+### Objective
+Generate SQL-based insights covering:
+
+- Customer behavior  
+- Product performance  
+- Sales trends  
+
+These insights empower stakeholders to make data-driven strategic decisions.
+
+---
+
+# 📂 Repository Structure
+data-warehouse-project/
+│
+├── datasets/                 # Raw ERP & CRM datasets
+│
+├── docs/                     # Documentation & architecture
+│   ├── data_architecture.png
+│   ├── data_catalog.md
+│   ├── data_flow.png
+│   ├── data_integration.png
+│   ├── data_models.png
+│   ├── naming-conventions.md
+│
+├── scripts/
+│   ├── bronze/               # Raw ingestion scripts
+│   ├── silver/               # Cleansing & transformation scripts
+│   ├── gold/                 # Analytical model scripts
+│
+├── tests/                    # Data quality validation scripts
+│
+├── README.md
+├── LICENSE
+└── requirements.txt
+
+---
+
+# 🧪 Data Quality & Validation
+
+This project includes structured quality checks for:
+
+- Duplicate primary keys  
+- Null validations  
+- Invalid date formats  
+- Negative or inconsistent values  
+- Referential integrity between fact and dimension tables  
+
+All quality checks are implemented using PostgreSQL-compatible SQL scripts.
+
+---
+
+# ☕ Stay Connected
+
+Let’s connect and collaborate:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arief-dwi-rachmadian/)
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://brxle0-portfolio.vercel.app/)
+
+---
+
+# 🛡️ License
+
+This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this project with proper attribution.
 
-## 🌟 About Me
+---
 
-Hi! I'm **Arief Dwi Rachmadian** (also known as **AriefDR**).
-I am a **Data Engineer & Software Engineer** passionate about architecting scalable data systems and backend services, transforming complex data into reliable, high-impact business insights.
+# 🌟 About Me
 
-⭐ If you find this project helpful, feel free to give it a star!
+Hi, I'm **Arief Dwi Rachmadian** 👋  
+
+I am a **Data Engineer** with hands-on experience building scalable data pipelines and modern data warehouse solutions using:
+
+- PostgreSQL  
+- Python  
+- AWS (S3, ECS, ECR, Lambda)  
+- Docker  
+- SQL-based ETL pipelines  
+
+Let’s build reliable data systems together 🚀
