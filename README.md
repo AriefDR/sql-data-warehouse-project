@@ -1,4 +1,4 @@
-# Data Warehouse and Analytics Project
+<img width="468" height="50" alt="image" src="https://github.com/user-attachments/assets/6e2251fe-c1b5-4d1c-beee-90ad1fc3d88b" /># Data Warehouse and Analytics Project
 
 Welcome to the **Data Warehouse and Analytics Project** repository 🚀  
 
@@ -131,17 +131,18 @@ These insights empower stakeholders to make data-driven strategic decisions.
 ---
 
 # 📂 Repository Structure
+```
 data-warehouse-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                            # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── docs/                                # Project documentation and architecture details
+│   ├── data_architecture.png            # Png file shows the project's architecture
+│   ├── data_catalog.md                  # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.png                    # Png file for the data flow diagram
+│   ├── data_integration.png             # Png file for data integration
+│   ├── data_models.png                  # Png file for data models (star schema)
+│   ├── naming-conventions.md            # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
 │   ├── bronze/                         # Scripts for extracting and loading raw data
@@ -152,8 +153,7 @@ data-warehouse-project/
 │
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+```
 ---
 
 # 🧪 Data Quality & Validation
