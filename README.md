@@ -139,7 +139,7 @@ data-warehouse-project/
 │   ├── data_architecture.png        # Png file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
 │   ├── data_flow.png                # Png file for the data flow diagram
-│   ├── data_integration.png                # Png file for data integration
+├── data_integration.png                # Png file for the data integration
 │   ├── data_models.png              # Png file for data models (star schema)
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
@@ -151,8 +151,7 @@ data-warehouse-project/
 ├── tests/                              # Test scripts and quality files
 │
 ├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-
+└── LICENSE                             # License information for the repository
 ---
 
 # 🧪 Data Quality & Validation
