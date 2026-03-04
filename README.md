@@ -133,26 +133,25 @@ These insights empower stakeholders to make data-driven strategic decisions.
 # 📂 Repository Structure
 data-warehouse-project/
 │
-├── datasets/                 # Raw ERP & CRM datasets
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/                     # Documentation & architecture
-│   ├── data_architecture.png
-│   ├── data_catalog.md
-│   ├── data_flow.png
-│   ├── data_integration.png
-│   ├── data_models.png
-│   ├── naming-conventions.md
+├── docs/                               # Project documentation and architecture details
+│   ├── data_architecture.png        # Png file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.png                # Png file for the data flow diagram
+│   ├── data_integration.png                # Png file for data integration
+│   ├── data_models.png              # Png file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/
-│   ├── bronze/               # Raw ingestion scripts
-│   ├── silver/               # Cleansing & transformation scripts
-│   ├── gold/                 # Analytical model scripts
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
 │
-├── tests/                    # Data quality validation scripts
+├── tests/                              # Test scripts and quality files
 │
-├── README.md
-├── LICENSE
-└── requirements.txt
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
 
 ---
 
